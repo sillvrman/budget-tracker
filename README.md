@@ -23,5 +23,5 @@ Budget Tracker is a web application built with React for managing and tracking e
 1. **Clone the repository**
 
    ```bash
-   git clone <repository-url>
+   git clone github.com/sillvrman/budget-tracker
    cd budget-tracker
