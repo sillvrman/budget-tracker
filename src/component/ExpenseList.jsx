@@ -1,7 +1,12 @@
 import { useState } from "react";
 import ExpenseItem from "./ExpenseItem";
 
-const ExpenseList = ({ expenses, deleteExpense, editExpense }) => {
+const ExpenseList = ({
+  expenses,
+  deleteExpense,
+  editExpense,
+  remainingBudget,
+}) => {
   const [filter, setFilter] = useState("");
 
   const handleFilterChange = (e) => {
@@ -33,6 +38,7 @@ const ExpenseList = ({ expenses, deleteExpense, editExpense }) => {
             expense={expense}
             deleteExpense={deleteExpense}
             editExpense={editExpense}
+            remainingBudget={remainingBudget}
           />
         ))}
       </ul>

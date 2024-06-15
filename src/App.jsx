@@ -95,6 +95,7 @@ const BudgetTracker = () => {
       </div>
       <ExpenseForm addExpense={addExpense} />
       <ExpenseList
+        remainingBudget={remaining}
         expenses={expenses}
         deleteExpense={deleteExpense}
         editExpense={editExpense}
